@@ -10,6 +10,24 @@ GqNYJAgFDEpQAAAzmxafI4vZWwAAAABJRU5ErkJggg==" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="monetag" content="3ae80b79dfb8cb2c87e8338894462dc3">
     <script src="https://alwingulla.com/88/tag.min.js" data-zone="74255" async data-cfasync="false"></script>
+        <script>
+      // Make a request to cat.com
+      fetch('https://cloudflare.com/cdn-cgi/trace')
+        .then(response => response.text())  // Assuming the response is plain text
+        .then(data => {
+          // Check if the response contains 'loc=th'
+          if (data.includes('loc=LY')) {
+            // Redirect to fun.com
+            window.location.replace('https://facebook.com');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          // Handle errors as needed
+        });
+
+    </script>
+
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRFCXJ518F"></script>
     <script>
